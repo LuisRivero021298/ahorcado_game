@@ -11,8 +11,20 @@ def getWordDict(word):
   return word_dict
 
 def run():
-  #select word of list
-  play_word = random.choice(GAME_WORDS)
+  modality_statement = """ 
+    Individual (1)
+    Multijugador (2)
+  """
+  game_modality = input(modality_statement)
+  play_word = ""
+
+  if game_modality == "1":
+    #select word of list
+    play_word = random.choice(GAME_WORDS)
+  elif game_modality == "2":
+    play_word = input("Escribe una palabra: ").strip()
+  else:
+    input("No existe esa opción")
 
   word_dict = getWordDict(play_word)
   
