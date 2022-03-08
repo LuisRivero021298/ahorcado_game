@@ -1,6 +1,4 @@
 # The Hangman Game (El juego del ahorcado)
-
-*This project was made with Python 3.10.2*
 This versions of Hangman is a console game, you can be play alone or with a friend
 
 ## The game rules
